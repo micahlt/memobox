@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--primary: #48f5a0;
+	--dark-primary: #2fa36a;
+}
+
+@font-face {
+	font-family: 'Cal Sans';
+	src: url('./assets/cal.woff') format('woff');
+}
+
+nav {
+	height: 60px;
+	display: block;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 1px 8px;
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+nav img {
+	height: 30px;
+	margin: 15px;
+	margin-left: 20px;
+}
+
+.card {
+	width: max-content;
+	padding: 1.5%;
+	background: white;
+	border-radius: 0.4em;
+	box-shadow: rgba(0, 0, 0, 0.3) 0 3px 8px;
+}
