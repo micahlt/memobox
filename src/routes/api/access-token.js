@@ -9,12 +9,6 @@ export async function post(request) {
 	data.append('client_id', client_id);
 	data.append('client_secret', client_secret);
 	data.append('code', code);
-  console.log('Recieved OAuth code', code);
-  console.log(`Using ${client_id} as ID and ${client_secret} as secret`);
-  console.log(`Form data:`);
-  for (var value of data.values()) {
-    console.log(value);
-  }
 	let username;
 	let token = await fetch('https://github.com/login/oauth/access_token', {
 		method: 'POST',

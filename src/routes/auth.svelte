@@ -17,8 +17,9 @@
 			body: window.localStorage.getItem('accessToken')
 		}).then((res) => {
 			if (res.status == 200) {
-				alert('ye')
 				window.location.replace('/inbox');
+			} else {
+				window.localStorage.removeItem('accessToken')
 			}
 		});
 		let code = params.get('code');
